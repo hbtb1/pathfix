@@ -1,0 +1,38 @@
+
+# Basic .zshrc configuration
+
+# Set the default shell prompt
+export PS1="%n@%m %1~ %# "
+
+# Enable command auto-correction
+setopt correct
+
+# Enable history appending instead of overwriting
+setopt APPEND_HISTORY
+
+# Share command history between all sessions
+setopt SHARE_HISTORY
+
+# Enable extended globbing
+setopt EXTENDED_GLOB
+
+# Enable color support for ls and other commands
+autoload -U colors && colors
+
+# Share command history between all sessions
+setopt SHARE_HISTORY
+
+# Enable extended globbing
+setopt EXTENDED_GLOB
+
+# Enable color support for ls and other commands
+autoload -U colors && colors
+
+# Add some useful aliases
+alias ll='ls -la'
+alias ..='cd ..'
+alias ...='cd ../..'
+
+export PATH=$PATH:/usr/local/bin
+export PATH="/opt/homebrew/bin:$PATH"
+
